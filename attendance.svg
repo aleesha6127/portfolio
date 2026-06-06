@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="pulse-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#bg-grad)" />
+  
+  <!-- Grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <path d="M 0,100 L 800,100 M 0,200 L 800,200 M 0,300 L 800,300 M 0,400 L 800,400" />
+    <path d="M 100,0 L 100,500 M 200,0 L 200,500 M 300,0 L 300,500 M 400,0 L 400,500 M 500,0 L 500,500 M 600,0 L 600,500 M 700,0 L 700,500" />
+  </g>
+
+  <!-- Scanner Frame -->
+  <rect x="250" y="80" width="300" height="340" rx="12" fill="none" stroke="url(#accent-grad)" stroke-width="2" stroke-dasharray="15, 10" stroke-opacity="0.4" />
+  
+  <!-- Glowing Frame Corners -->
+  <path d="M 240,110 L 240,70 L 280,70" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" filter="url(#glow)" />
+  <path d="M 560,110 L 560,70 L 520,70" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" filter="url(#glow)" />
+  <path d="M 240,390 L 240,430 L 280,430" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" filter="url(#glow)" />
+  <path d="M 560,390 L 560,430 L 520,430" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" filter="url(#glow)" />
+
+  <!-- Scanning Line -->
+  <rect x="242" y="240" width="316" height="20" fill="url(#pulse-grad)" />
+  <line x1="240" y1="240" x2="560" y2="240" stroke="#22c55e" stroke-width="3" filter="url(#glow)" />
+
+  <!-- Biometric HUD elements -->
+  <!-- Target circles -->
+  <circle cx="400" cy="230" r="100" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="5 5" stroke-opacity="0.6" />
+  <circle cx="400" cy="230" r="120" fill="none" stroke="#6366f1" stroke-width="1" stroke-opacity="0.3" />
+  <circle cx="400" cy="230" r="40" fill="none" stroke="#38bdf8" stroke-width="2" filter="url(#glow)" stroke-dasharray="20 10" />
+
+  <!-- Face Wireframe Outline -->
+  <path d="M 400,140 C 350,140 330,170 330,220 C 330,280 370,330 400,330 C 430,330 470,280 470,220 C 470,170 450,140 400,140 Z" fill="none" stroke="#38bdf8" stroke-opacity="0.5" stroke-width="2" />
+  <!-- Eyes & Nose points -->
+  <circle cx="370" cy="205" r="4" fill="#38bdf8" filter="url(#glow)" />
+  <circle cx="430" cy="205" r="4" fill="#38bdf8" filter="url(#glow)" />
+  <path d="M 400,205 L 400,245 L 390,255 L 400,255" fill="none" stroke="#38bdf8" stroke-width="2" />
+  <path d="M 365,280 Q 400,300 435,280" fill="none" stroke="#38bdf8" stroke-width="2" />
+
+  <!-- Recognition Text box -->
+  <rect x="310" y="360" width="180" height="35" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="#22c55e" stroke-width="1.5" filter="url(#glow)" />
+  <text x="400" y="382" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" fill="#22c55e" text-anchor="middle" letter-spacing="1.5">FACE RECOGNIZED</text>
+
+  <!-- Sidebar Analytics UI -->
+  <!-- Top Left Info -->
+  <text x="40" y="60" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#64748b" letter-spacing="1">SYSTEM STATUS</text>
+  <text x="40" y="80" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="bold" fill="#22c55e">ACTIVE / SECURE</text>
+
+  <!-- Bottom Left Info -->
+  <text x="40" y="420" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#64748b" letter-spacing="1">ATTENDANCE LOG</text>
+  <text x="40" y="440" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" fill="#e2e8f0">ID: 8094 - A. Anas</text>
+  <text x="40" y="460" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" fill="#64748b">Verified: 09:30:15 AM</text>
+
+  <!-- Top Right Info -->
+  <text x="630" y="60" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#64748b" letter-spacing="1" text-anchor="end">MATCH RATE</text>
+  <text x="760" y="80" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="bold" fill="#38bdf8" text-anchor="end">99.8%</text>
+
+  <!-- Bottom Right Mini Chart -->
+  <text x="630" y="390" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#64748b" letter-spacing="1" text-anchor="end">WEEKLY ACTIVITY</text>
+  <!-- Tiny Bar Charts -->
+  <rect x="650" y="410" width="12" height="50" rx="2" fill="#6366f1" />
+  <rect x="670" y="420" width="12" height="40" rx="2" fill="#6366f1" />
+  <rect x="690" y="405" width="12" height="55" rx="2" fill="#38bdf8" />
+  <rect x="710" y="435" width="12" height="25" rx="2" fill="#6366f1" />
+  <rect x="730" y="415" width="12" height="45" rx="2" fill="#22c55e" />
+  <rect x="750" y="400" width="12" height="60" rx="2" fill="#22c55e" filter="url(#glow)" />
+</svg>
