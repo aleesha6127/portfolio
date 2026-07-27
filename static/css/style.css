@@ -320,11 +320,12 @@ body {
   max-height: 530px;
   object-fit: contain;
   filter: drop-shadow(0 30px 45px rgba(244, 183, 94, 0.28));
+  margin-top: -2.5rem;
   animation: float 6s ease-in-out infinite;
 }
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+  0%, 100% { transform: translateY(-20px); }
+  50% { transform: translateY(-32px); }
 }
 
 /* ABOUT SHOWCASE */
