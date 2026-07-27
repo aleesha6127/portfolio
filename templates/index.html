@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aleesha Anas | Software Developer & Full Stack Specialist Portfolio</title>
+  <meta name="description" content="Award-winning dark luxury personal portfolio of Aleesha Anas. Software Developer specializing in Python, Flask, React.js, Next.js, and modern database architectures.">
+  <meta name="author" content="Aleesha Anas">
+  
+  <!-- Favicon / Fonts -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Ambient Glow Background -->
+  <div class="ambient-glow">
+    <div class="glow-gold-top"></div>
+    <div class="glow-blue-left"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#home" class="brand-logo">
+          <div class="brand-icon"><i data-lucide="code-2"></i></div>
+          <div class="brand-text">
+            <span class="brand-name">ALEESHA ANAS</span>
+            <span class="brand-sub">SOFTWARE DEVELOPER</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="/public/resume.pdf" download class="btn-secondary">
+            <i data-lucide="file-text" style="color: #F4B75E; width: 14px;"></i>
+            <span>Resume</span>
+          </a>
+          <a href="#contact" class="btn-primary">
+            <span>Hire Me</span>
+            <i data-lucide="send" style="width: 14px;"></i>
+          </a>
+        </div>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-title">
+            ENGINEER.<br>
+            BUILD.<br>
+            SCALE.
+          </div>
+          <div class="hero-subtitle font-serif italic text-gradient-gold">
+            All in one place.
+          </div>
+
+          <p class="hero-desc">
+            I am <strong style="color: #FFF;">Aleesha Anas</strong>, a Software Developer specializing in Python, React.js, Next.js 15, Flask, RESTful APIs, and modern database architectures. I build fast, scalable, production-ready web software.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#projects" class="btn-primary">
+              <span>Explore Projects</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <i data-lucide="send" style="width: 14px;"></i>
+              <span>Hire Me</span>
+            </a>
+            <a href="/public/resume.pdf" download class="btn-secondary">
+              <i data-lucide="file-text" style="color: #F4B75E; width: 14px;"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+            <div style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.8rem; font-family: monospace; color: #D1D5DB; margin-bottom: 0.8rem;">
+              <i data-lucide="check-circle-2" style="color: #F4B75E; width: 16px;"></i>
+              <span><strong style="color: #FFF;">3 Software Internships:</strong> Dodo Interactive • Fawstech Innovations • ByteMinders</span>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap;">
+              <span style="font-size: 0.75rem; font-family: monospace; color: #9CA3AF; text-transform: uppercase;">Connect:</span>
+              <a href="https://github.com/aleesha6127" target="_blank" class="btn-secondary" style="padding: 0.5rem; border-radius: 50%; width: 36px; height: 36px; justify-content: center;"><i data-lucide="github"></i></a>
+              <a href="https://linkedin.com/in/aleesha-anas-a7553533b" target="_blank" class="btn-secondary" style="padding: 0.5rem; border-radius: 50%; width: 36px; height: 36px; justify-content: center;"><i data-lucide="linkedin"></i></a>
+              <a href="mailto:aleeshaanas2@gmail.com" class="btn-secondary" style="padding: 0.5rem; border-radius: 50%; width: 36px; height: 36px; justify-content: center;"><i data-lucide="mail"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-portrait-wrap">
+          <img src="/public/yourphoto_transparent (2).png" alt="Aleesha Anas" class="portrait-img">
+          
+          <div class="floating-badge badge-top">
+            <div style="width: 8px; height: 8px; border-radius: 50%; background: #F4B75E;"></div>
+            <div>
+              <p style="font-size: 0.6rem; font-family: monospace; color: #9CA3AF;">FOCUS</p>
+              <p style="font-size: 0.75rem; font-weight: 700; color: #FFF; font-family: monospace;">Python & Flask APIs</p>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <i data-lucide="zap" style="color: #F4B75E; width: 16px;"></i>
+            <div>
+              <p style="font-size: 0.6rem; font-family: monospace; color: #9CA3AF;">STACK</p>
+              <p style="font-size: 0.75rem; font-weight: 700; color: #FFF; font-family: monospace;">React & Full-Stack</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TechBar -->
+  <div class="techbar">
+    <div class="container">
+      <div class="techbar-track">
+        <div class="techbar-item"><i data-lucide="code"></i> PYTHON 3.12</div>
+        <div class="techbar-item"><i data-lucide="layers"></i> FLASK</div>
+        <div class="techbar-item"><i data-lucide="layout"></i> REACT.JS</div>
+        <div class="techbar-item"><i data-lucide="cpu"></i> NEXT.JS 15</div>
+        <div class="techbar-item"><i data-lucide="database"></i> POSTGRESQL</div>
+        <div class="techbar-item"><i data-lucide="server"></i> MONGODB</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <span class="section-tag">ABOUT ALEESHA ANAS</span>
+      <h2 class="section-heading">Driven by <span class="font-serif italic text-gradient-gold">clean architecture</span> and high impact.</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;" class="cards-grid">
+        <div class="card lux-glass lux-glass-hover" style="padding: 2rem;">
+          <h3 style="font-size: 1.2rem; color: #FFF; margin-bottom: 0.8rem;">Education & Background</h3>
+          <p style="font-size: 0.9rem; color: #9CA3AF; line-height: 1.6;">
+            Holding a Master of Computer Applications (MCA), Aleesha possesses a deep foundation in data structures, algorithms, database optimization, and modern software engineering principles.
+          </p>
+        </div>
+
+        <div class="card lux-glass lux-glass-hover" style="padding: 2rem;">
+          <h3 style="font-size: 1.2rem; color: #FFF; margin-bottom: 0.8rem;">3 Software Internships</h3>
+          <p style="font-size: 0.9rem; color: #9CA3AF; line-height: 1.6;">
+            Proven industry track record building production-grade frontend interfaces at Dodo Interactive, backend APIs at Fawstech Innovations, and full-stack solutions at ByteMinders Edutech.
+          </p>
+        </div>
+
+        <div class="card lux-glass lux-glass-hover" style="padding: 2rem;">
+          <h3 style="font-size: 1.2rem; color: #FFF; margin-bottom: 0.8rem;">Core Engineering Philosophy</h3>
+          <p style="font-size: 0.9rem; color: #9CA3AF; line-height: 1.6;">
+            Writing clean, maintainable, modular code. Prioritizing fast response times, robust error handling, security, and seamless developer-to-client handoffs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <span class="section-tag">FEATURED CASE STUDIES</span>
+      <h2 class="section-heading">Designing impact through <span class="font-serif italic text-gradient-pink">meaningful</span> solutions.</h2>
+
+      <div class="cards-grid">
+        <!-- Project 1 -->
+        <div class="card lux-glass lux-glass-hover">
+          <img src="/public/attendance.svg" alt="Smart Attendance System" class="project-card-img">
+          <div style="padding: 1.5rem;">
+            <span style="font-size: 0.75rem; font-family: monospace; color: var(--gold-primary);">01 • Python • Flask • OpenCV</span>
+            <h3 style="font-size: 1.2rem; color: #FFF; margin: 0.4rem 0;">SMART ATTENDANCE SYSTEM</h3>
+            <p style="font-size: 0.85rem; color: #9CA3AF; margin-bottom: 1rem;">Biometric facial recognition pipeline built with Flask backend and OpenCV image processing.</p>
+            <a href="https://smart-attendance-system-3xze.onrender.com" target="_blank" class="btn-primary" style="font-size: 0.7rem; padding: 0.5rem 1rem;">Launch Live Demo <i data-lucide="external-link"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card lux-glass lux-glass-hover">
+          <img src="/public/hospital.svg" alt="Hospital Management System" class="project-card-img">
+          <div style="padding: 1.5rem;">
+            <span style="font-size: 0.75rem; font-family: monospace; color: var(--gold-primary);">02 • Flask • PostgreSQL</span>
+            <h3 style="font-size: 1.2rem; color: #FFF; margin: 0.4rem 0;">HOSPITAL MANAGEMENT SYSTEM</h3>
+            <p style="font-size: 0.85rem; color: #9CA3AF; margin-bottom: 1rem;">Optimized REST APIs and PostgreSQL database queries for healthcare patient records.</p>
+            <a href="https://hospital-management-izbu.onrender.com" target="_blank" class="btn-primary" style="font-size: 0.7rem; padding: 0.5rem 1rem;">Launch Live Demo <i data-lucide="external-link"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card lux-glass lux-glass-hover">
+          <img src="/public/electricity.svg" alt="Electricity Billing System" class="project-card-img">
+          <div style="padding: 1.5rem;">
+            <span style="font-size: 0.75rem; font-family: monospace; color: var(--gold-primary);">03 • IoT • Firebase</span>
+            <h3 style="font-size: 1.2rem; color: #FFF; margin: 0.4rem 0;">ELECTRICITY BILLING & ANALYSIS</h3>
+            <p style="font-size: 0.85rem; color: #9CA3AF; margin-bottom: 1rem;">Physical IoT hardware capture synced in real-time to Firebase database analytics.</p>
+            <a href="https://electricity-billing-system-psi.vercel.app" target="_blank" class="btn-primary" style="font-size: 0.7rem; padding: 0.5rem 1rem;">Launch Live Demo <i data-lucide="external-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Banner -->
+  <section class="section" id="contact" style="background: rgba(14, 9, 33, 0.6); border-t: 1px solid rgba(255, 255, 255, 0.1);">
+    <div class="container" style="text-align: center;">
+      <span class="section-tag">GET IN TOUCH</span>
+      <h2 class="section-heading">Let's build something <span class="font-serif italic text-gradient-gold">extraordinary</span> together.</h2>
+      
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+        <a href="mailto:aleeshaanas2@gmail.com" class="btn-primary" style="padding: 0.9rem 2rem;">
+          <i data-lucide="mail"></i>
+          <span>Email: aleeshaanas2@gmail.com</span>
+        </a>
+        <a href="https://wa.me/919846691678" target="_blank" class="btn-secondary" style="padding: 0.9rem 2rem;">
+          <i data-lucide="message-square"></i>
+          <span>WhatsApp: +91 9846691678</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="padding: 2.5rem 0; border-top: 1px solid rgba(255, 255, 255, 0.1); background: #05070D;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.8rem; color: #9CA3AF;">
+      <div>© {{ year }} Aleesha Anas. All rights reserved. Built with Python & Flask.</div>
+      <div style="display: flex; gap: 1rem;">
+        <a href="https://github.com/aleesha6127" target="_blank" style="color: #9CA3AF; text-decoration: none;">GitHub</a>
+        <a href="https://linkedin.com/in/aleesha-anas-a7553533b" target="_blank" style="color: #9CA3AF; text-decoration: none;">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AI Copilot Widget (Powered by Python Flask API) -->
+  <div class="copilot-widget">
+    <button class="copilot-btn" id="copilotBtn" title="Ask Aleesha's AI Copilot">
+      <i data-lucide="bot" style="width: 26px; height: 26px;"></i>
+    </button>
+  </div>
+
+  <div class="copilot-modal" id="copilotModal">
+    <div class="copilot-header">
+      <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 700; font-size: 0.85rem;">
+        <i data-lucide="bot" style="color: #F4B75E; width: 18px;"></i>
+        <span>ALEESHA AI COPILOT</span>
+      </div>
+      <button id="copilotClose" style="background: none; border: none; color: #9CA3AF; cursor: pointer;">
+        <i data-lucide="x" style="width: 18px;"></i>
+      </button>
+    </div>
+
+    <div class="copilot-body" id="copilotBody">
+      <div class="msg-bubble msg-bot">
+        Hello! I am Aleesha's AI Portfolio Assistant 🤖. How can I help you explore her skills, projects, or background today?
+      </div>
+    </div>
+
+    <div class="copilot-footer">
+      <input type="text" class="copilot-input" id="copilotInput" placeholder="Ask anything about Aleesha...">
+      <button class="btn-primary" id="copilotSend" style="padding: 0.6rem 1rem; border-radius: 9999px;">
+        <i data-lucide="send" style="width: 14px;"></i>
+      </button>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
