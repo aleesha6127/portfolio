@@ -37,7 +37,6 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#reviews">Reviews</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
 
@@ -100,7 +99,7 @@
               <div style="font-size: 0.72rem; font-family: monospace; color: #94A3B8; text-transform: uppercase;">Software Internships</div>
             </div>
             <div>
-              <div style="font-size: 1.8rem; font-weight: 900; color: var(--gold-primary); font-family: monospace;">5+</div>
+              <div style="font-size: 1.8rem; font-weight: 900; color: var(--gold-primary); font-family: monospace;">5</div>
               <div style="font-size: 0.72rem; font-family: monospace; color: #94A3B8; text-transform: uppercase;">Live Case Studies</div>
             </div>
             <div>
@@ -333,19 +332,20 @@
     </div>
   </section>
 
-  <!-- 7. FEATURED PROJECTS SECTION -->
+  <!-- 7. FEATURED PROJECTS SECTION (ALL 5 PROJECTS DISPLAYED) -->
   <section class="section" id="projects" style="background: #04060A;">
     <div class="container">
       <span class="section-tag">CASE STUDIES</span>
       <h2 class="section-heading">Featured <span class="font-serif italic text-gradient-gold">Projects</span></h2>
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <!-- Project 1 -->
         <div style="border: 1px solid var(--border-subtle); border-radius: 1.5rem; overflow: hidden; background: rgba(255,255,255,0.02);">
           <img src="/public/attendance.svg" alt="Smart Attendance System" style="width: 100%; height: 210px; object-fit: cover;">
           <div style="padding: 1.5rem;">
             <div style="font-size: 0.72rem; font-family: monospace; color: var(--gold-primary); font-weight: 700;">01 • Python • Flask • OpenCV</div>
             <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin: 0.4rem 0;">SMART ATTENDANCE SYSTEM</h3>
-            <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 1.2rem;">Facial recognition pipeline built with Flask backend and OpenCV image processing.</p>
+            <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 1.2rem;">Facial recognition pipeline built with Flask backend and OpenCV image processing (~90% accuracy).</p>
             <div style="display: flex; gap: 0.6rem;">
               <button onclick="openModal('Smart Attendance System', 'Built the Flask backend, database schema, and image-processing pipeline; tested on a class of 10–15 students with ~90% recognition accuracy.', 'Python • OpenCV • Flask • AI Pipeline', 'https://smart-attendance-system-3xze.onrender.com')" class="btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">Details</button>
               <a href="https://smart-attendance-system-3xze.onrender.com" target="_blank" class="btn-primary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">Live Demo <i data-lucide="external-link"></i></a>
@@ -353,6 +353,7 @@
           </div>
         </div>
 
+        <!-- Project 2 -->
         <div style="border: 1px solid var(--border-subtle); border-radius: 1.5rem; overflow: hidden; background: rgba(255,255,255,0.02);">
           <img src="/public/hospital.svg" alt="Hospital Management System" style="width: 100%; height: 210px; object-fit: cover;">
           <div style="padding: 1.5rem;">
@@ -366,6 +367,7 @@
           </div>
         </div>
 
+        <!-- Project 3 -->
         <div style="border: 1px solid var(--border-subtle); border-radius: 1.5rem; overflow: hidden; background: rgba(255,255,255,0.02);">
           <img src="/public/electricity.svg" alt="Electricity Billing System" style="width: 100%; height: 210px; object-fit: cover;">
           <div style="padding: 1.5rem;">
@@ -378,11 +380,39 @@
             </div>
           </div>
         </div>
+
+        <!-- Project 4 -->
+        <div style="border: 1px solid var(--border-subtle); border-radius: 1.5rem; overflow: hidden; background: rgba(255,255,255,0.02);">
+          <img src="/public/tourism.png" alt="Tourism Management System" style="width: 100%; height: 210px; object-fit: cover;">
+          <div style="padding: 1.5rem;">
+            <div style="font-size: 0.72rem; font-family: monospace; color: var(--gold-primary); font-weight: 700;">04 • MERN Stack</div>
+            <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin: 0.4rem 0;">TOURISM MANAGEMENT SYSTEM</h3>
+            <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 1.2rem;">Full-stack booking portal with React frontend and MongoDB backend for vacation packages.</p>
+            <div style="display: flex; gap: 0.6rem;">
+              <button onclick="openModal('Tourism Management System', 'Built RESTful APIs and a responsive React.js interface backed by MongoDB for managing vacation packages, itineraries, and queries.', 'MongoDB • Express • React.js • Node.js', 'https://tourism-management-nvmo.vercel.app')" class="btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">Details</button>
+              <a href="https://tourism-management-nvmo.vercel.app" target="_blank" class="btn-primary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">Live Demo <i data-lucide="external-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div style="border: 1px solid var(--border-subtle); border-radius: 1.5rem; overflow: hidden; background: rgba(255,255,255,0.02);">
+          <img src="/public/trustshield.png" alt="TrustShield Women Safety App" style="width: 100%; height: 210px; object-fit: cover;">
+          <div style="padding: 1.5rem;">
+            <div style="font-size: 0.72rem; font-family: monospace; color: var(--gold-primary); font-weight: 700;">05 • REST APIs • MongoDB</div>
+            <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin: 0.4rem 0;">TRUSTSHIELD — WOMEN SAFETY</h3>
+            <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 1.2rem;">Integrated REST APIs with MongoDB for a responsive, low-friction emergency solution.</p>
+            <div style="display: flex; gap: 0.6rem;">
+              <button onclick="openModal('TrustShield — Women Safety App', 'Integrated RESTful APIs with MongoDB and designed a responsive, low-friction UI for emergency situation use.', 'React.js • Node.js • Express • MongoDB', 'https://trustshield-jqpk.onrender.com')" class="btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">Details</button>
+              <a href="https://trustshield-jqpk.onrender.com" target="_blank" class="btn-primary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">Live Demo <i data-lucide="external-link"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 8. ULTRA-UNIQUE CREDENTIALS & HONORS SHOWCASE (NON-RESUME PATTERN) -->
+  <!-- 8. ULTRA-UNIQUE CREDENTIALS & HONORS SHOWCASE -->
   <section class="section" id="certifications">
     <div class="container">
       <div style="text-align: center; max-width: 700px; margin: 0 auto 3.5rem auto;">
