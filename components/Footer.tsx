@@ -34,7 +34,7 @@ export default function Footer() {
           <a href="#about" className="hover:text-[#F3C77C] transition-colors">About</a>
           <a href="#projects" className="hover:text-[#F3C77C] transition-colors">Projects</a>
           <a href="#contact" className="hover:text-[#F3C77C] transition-colors">Contact</a>
-          <span>© {new Date().getFullYear()} Aleesha Anas. All rights reserved.</span>
+          <span suppressHydrationWarning>© {new Date().getFullYear()} Aleesha Anas. All rights reserved.</span>
         </div>
 
         {/* Social Icons matching reference */}

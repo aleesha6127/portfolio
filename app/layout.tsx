@@ -61,8 +61,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
-      <body className={`${outfit.variable} font-sans bg-[#09090B] text-gray-100 antialiased selection:bg-[#F4B75E] selection:text-[#09090B]`}>
+    <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
+      <body className={`${outfit.variable} font-sans bg-[#09090B] text-gray-100 antialiased selection:bg-[#F4B75E] selection:text-[#09090B]`} suppressHydrationWarning>
         <ScrollProgress />
         <CustomCursor />
         <SmoothScroll>{children}</SmoothScroll>
