@@ -327,7 +327,7 @@ body {
   50% { transform: translateY(-12px); }
 }
 
-/* ULTRA-UNIQUE ABOUT SECTION DESIGN */
+/* ABOUT SHOWCASE */
 .about-showcase {
   display: grid;
   grid-template-columns: 1fr;
@@ -348,22 +348,6 @@ body {
   border: 1px solid rgba(244, 183, 94, 0.3);
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
   overflow: hidden;
-}
-
-.about-matrix-card::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(244, 183, 94, 0.08) 0%, transparent 60%);
-  pointer-events: none;
-  animation: rotateGlow 15s linear infinite;
-}
-@keyframes rotateGlow {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
 
 .about-pillar-item {
@@ -393,6 +377,56 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+/* ULTRA-UNIQUE CREDENTIAL & HONORS BADGE CARDS */
+.cred-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 1024px) {
+  .cred-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cred-card {
+  position: relative;
+  padding: 2.2rem;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(6, 8, 14, 0.95) 100%);
+  border: 1px solid rgba(244, 183, 94, 0.25);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+.cred-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold-primary);
+  box-shadow: 0 25px 55px rgba(244, 183, 94, 0.18);
+}
+
+.cred-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: rgba(244, 183, 94, 0.15);
+  border: 1px solid rgba(244, 183, 94, 0.35);
+  color: var(--gold-primary);
+  font-size: 0.7rem;
+  font-family: monospace;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.cred-badge-pink {
+  background: rgba(236, 72, 153, 0.15);
+  border-color: rgba(236, 72, 153, 0.35);
+  color: var(--pink-accent);
 }
 
 /* WORK EXPERIENCE LIST */
