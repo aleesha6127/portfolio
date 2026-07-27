@@ -2,7 +2,6 @@
   "name": "aleesha-anas-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://aleesha6127.github.io/portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
