@@ -255,6 +255,7 @@ body {
   letter-spacing: 0.05em;
   text-decoration: none;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .btn-secondary:hover {
   background: var(--gold-primary);
@@ -453,6 +454,47 @@ body {
   height: 220px;
   object-fit: cover;
   background: #111827;
+}
+
+/* Tool & Tech Tags */
+.tool-pill {
+  padding: 0.6rem;
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+.tool-pill:hover {
+  border-color: rgba(236, 72, 153, 0.4);
+  background: rgba(255, 255, 255, 0.06);
+}
+.tool-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #FFF;
+  font-family: monospace;
+}
+.tool-cat {
+  font-size: 0.65rem;
+  color: #9CA3AF;
+  font-family: monospace;
+}
+
+.tech-tag {
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.7rem;
+  font-family: monospace;
+  color: #D1D5DB;
+}
+
+/* Contact Grid */
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* AI Copilot Widget */
