@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#042f2e" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+    <linearGradient id="pulse-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#14b8a6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.1" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Grid Pattern -->
+  <g stroke="#ffffff" stroke-opacity="0.02" stroke-width="1">
+    <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,255 L 800,255 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400 M 0,450 L 800,450" />
+    <path d="M 50,0 L 50,500 M 100,0 L 100,500 M 150,0 L 150,500 M 200,0 L 200,500 M 250,0 L 250,500 M 300,0 L 300,500 M 350,0 L 350,500 M 400,0 L 400,500 M 450,0 L 450,500 M 500,0 L 500,500 M 550,0 L 550,500 M 600,0 L 600,500 M 650,0 L 650,500 M 700,0 L 700,500 M 750,0 L 750,500" />
+  </g>
+
+  <!-- Large Central Dashboard Panel -->
+  <rect x="50" y="50" width="700" height="400" rx="12" fill="#0f172a" fill-opacity="0.6" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Medical UI Headers -->
+  <rect x="50" y="50" width="700" height="60" rx="12" fill="#111827" fill-opacity="0.8" />
+  <circle cx="85" cy="80" r="15" fill="url(#accent-grad)" />
+  <!-- Medical Cross Symbol -->
+  <path d="M 81,80 L 89,80 M 85,76 L 85,84" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+  
+  <text x="115" y="85" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="bold" fill="#e2e8f0">MedLife HMS</text>
+  <text x="710" y="85" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#0d9488" text-anchor="end">SYS: ONLINE</text>
+
+  <!-- Vitals Cards (Left Column) -->
+  <g transform="translate(80, 140)">
+    <!-- Patient Card -->
+    <rect width="260" height="120" rx="8" fill="#1e293b" fill-opacity="0.5" stroke="#334155" stroke-width="1" />
+    <text x="20" y="30" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#64748b">PATIENT OUTPATIENT RATIO</text>
+    <text x="20" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="bold" fill="#14b8a6">1,248</text>
+    <path d="M 20,90 L 150,90" stroke="#0d9488" stroke-width="4" stroke-linecap="round" />
+    <path d="M 150,90 L 240,90" stroke="#475569" stroke-width="4" stroke-linecap="round" />
+    <text x="20" y="108" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#64748b">85% Occupancy Rate</text>
+  </g>
+
+  <g transform="translate(80, 290)">
+    <!-- Doctors Available Card -->
+    <rect width="260" height="120" rx="8" fill="#1e293b" fill-opacity="0.5" stroke="#334155" stroke-width="1" />
+    <text x="20" y="30" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#64748b">ACTIVE DOCTORS ON DUTY</text>
+    <text x="20" y="70" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="bold" fill="#38bdf8">92 / 105</text>
+    <!-- Doctor profiles mock circles -->
+    <circle cx="170" cy="65" r="14" fill="#0d9488" />
+    <circle cx="190" cy="65" r="14" fill="#3b82f6" />
+    <circle cx="210" cy="65" r="14" fill="#6366f1" />
+    <text x="20" y="108" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#64748b">Emergency Staff Ready</text>
+  </g>
+
+  <!-- Realtime ECG Monitor (Right Column) -->
+  <g transform="translate(370, 140)">
+    <rect width="350" height="270" rx="8" fill="#090d16" stroke="#1e293b" stroke-width="1.5" />
+    <text x="20" y="30" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#64748b">CRITICAL PATIENT VITAL MONITOR</text>
+    
+    <!-- Heart Rate Vitals Details -->
+    <text x="20" y="75" font-family="'Segoe UI', Roboto, sans-serif" font-size="36" font-weight="bold" fill="#14b8a6" filter="url(#glow)">72</text>
+    <text x="75" y="60" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#64748b">BPM</text>
+    
+    <text x="280" y="75" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="bold" fill="#38bdf8" text-anchor="end">98%</text>
+    <text x="285" y="60" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" fill="#64748b">SPO2</text>
+
+    <!-- ECG Graph Line -->
+    <path d="M 20,200 L 80,200 L 90,180 L 100,220 L 110,200 L 140,200 L 148,150 L 156,250 L 164,190 L 172,205 L 180,200 L 230,200 L 240,175 L 250,225 L 260,200 L 290,200 L 298,140 L 306,260 L 314,185 L 322,205 L 330,200" 
+          fill="none" stroke="#14b8a6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+    
+    <circle cx="298" cy="140" r="4" fill="#ffffff" filter="url(#glow)" />
+  </g>
+</svg>
