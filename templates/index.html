@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aleesha Anas | Software Developer & Full Stack Specialist Portfolio</title>
-  <meta name="description" content="Award-winning dark luxury personal portfolio of Aleesha Anas. Software Developer specializing in Python, Flask, React.js, Next.js, and modern database architectures.">
+  <title>Aleesha Anas | Software Developer Portfolio</title>
+  <meta name="description" content="Software Developer portfolio of Aleesha Anas. Specializing in Python, Flask, React.js, Next.js, and modern database architectures.">
   <meta name="author" content="Aleesha Anas">
   
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
@@ -14,17 +14,17 @@
 
   <!-- Ambient Glow Background -->
   <div class="ambient-glow">
-    <div class="glow-1"></div>
-    <div class="glow-2"></div>
+    <div class="glow-top"></div>
+    <div class="glow-bottom"></div>
   </div>
 
   <!-- 1. NAVBAR -->
   <header class="navbar" id="navbar">
     <div class="container">
-      <div class="nav-wrapper">
+      <div style="display: flex; align-items: center; justify-content: space-between;">
         <a href="#home" class="brand-logo">
           <div class="brand-icon"><i data-lucide="code-2"></i></div>
-          <div class="brand-text">
+          <div style="display: flex; flex-direction: column;">
             <span class="brand-name">ALEESHA ANAS</span>
             <span class="brand-sub">SOFTWARE DEVELOPER</span>
           </div>
@@ -110,272 +110,221 @@
           </div>
         </div>
 
-        <div class="hero-portrait-wrap">
+        <div class="portrait-wrap" style="position: relative; display: flex; justify-content: center;">
           <img src="/public/yourphoto_transparent (2).png" alt="Aleesha Anas" class="portrait-img">
-          
-          <div class="floating-badge badge-top">
-            <div style="width: 8px; height: 8px; border-radius: 50%; background: #F4B75E;"></div>
-            <div>
-              <p style="font-size: 0.6rem; font-family: monospace; color: #94A3B8;">FOCUS</p>
-              <p style="font-size: 0.78rem; font-weight: 700; color: #FFF; font-family: monospace;">Python & Flask APIs</p>
-            </div>
-          </div>
-
-          <div class="floating-badge badge-bottom">
-            <i data-lucide="zap" style="color: #F4B75E; width: 16px;"></i>
-            <div>
-              <p style="font-size: 0.6rem; font-family: monospace; color: #94A3B8;">STACK</p>
-              <p style="font-size: 0.78rem; font-weight: 700; color: #FFF; font-family: monospace;">React & Full-Stack</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 3. TECHBAR TICKER -->
-  <div style="background: rgba(15, 23, 42, 0.7); border-y: 1px solid rgba(255, 255, 255, 0.08); padding: 1.5rem 0;">
+  <!-- 3. TECH TICKER -->
+  <div style="border-y: 1px solid rgba(255, 255, 255, 0.08); padding: 1.4rem 0;">
     <div class="container">
-      <div style="display: flex; gap: 3rem; align-items: center; justify-content: space-around; flex-wrap: wrap; font-family: monospace; font-size: 0.85rem; font-weight: 700; color: #94A3B8;">
-        <div><i data-lucide="code" style="color: #F4B75E; width: 16px;"></i> PYTHON 3.12</div>
-        <div><i data-lucide="layers" style="color: #F4B75E; width: 16px;"></i> FLASK</div>
-        <div><i data-lucide="layout" style="color: #F4B75E; width: 16px;"></i> REACT.JS</div>
-        <div><i data-lucide="cpu" style="color: #F4B75E; width: 16px;"></i> NEXT.JS 15</div>
-        <div><i data-lucide="database" style="color: #F4B75E; width: 16px;"></i> POSTGRESQL</div>
-        <div><i data-lucide="server" style="color: #F4B75E; width: 16px;"></i> MONGODB</div>
+      <div style="display: flex; gap: 2.5rem; align-items: center; justify-content: space-around; flex-wrap: wrap; font-family: monospace; font-size: 0.85rem; font-weight: 700; color: #94A3B8;">
+        <div><i data-lucide="code" style="color: #F4B75E; width: 15px;"></i> PYTHON 3.12</div>
+        <div><i data-lucide="layers" style="color: #F4B75E; width: 15px;"></i> FLASK</div>
+        <div><i data-lucide="layout" style="color: #F4B75E; width: 15px;"></i> REACT.JS</div>
+        <div><i data-lucide="cpu" style="color: #F4B75E; width: 15px;"></i> NEXT.JS 15</div>
+        <div><i data-lucide="database" style="color: #F4B75E; width: 15px;"></i> POSTGRESQL</div>
+        <div><i data-lucide="server" style="color: #F4B75E; width: 15px;"></i> MONGODB</div>
       </div>
     </div>
   </div>
 
-  <!-- 4. NEWEST BENTO GRID (ABOUT & CAPABILITIES) -->
+  <!-- 4. ABOUT SECTION (DE-CARDED CLEAN TYPOGRAPHY) -->
   <section class="section" id="about">
     <div class="container">
-      <span class="section-tag">ABOUT ALEESHA ANAS</span>
-      <h2 class="section-heading">Driven by <span class="font-serif italic text-gradient-gold">clean architecture</span> and high impact.</h2>
+      <div style="display: grid; grid-template-columns: 1fr; gap: 3rem;" class="about-grid">
+        <div>
+          <span class="section-tag">ABOUT ALEESHA ANAS</span>
+          <h2 class="section-heading" style="margin-bottom: 1.5rem;">Driven by <span class="font-serif italic text-gradient-gold">clean architecture</span> and high impact.</h2>
+          
+          <p style="font-size: 1.05rem; color: #CBD5E1; line-height: 1.75; margin-bottom: 1.5rem;">
+            Holding a Master of Computer Applications (MCA) degree, Aleesha possesses a strong theoretical and practical foundation in full-stack software development, database design, and algorithmic problem-solving.
+          </p>
 
-      <div class="bento-grid">
-        <!-- Bento Card 1: MCA Degree & Background -->
-        <div class="bento-card col-span-8" style="padding: 2.2rem;">
-          <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.2rem;">
-            <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(244, 183, 94, 0.15); border: 1px solid rgba(244, 183, 94, 0.3); display: flex; align-items: center; justify-content: center; color: #F4B75E;">
-              <i data-lucide="graduation-cap"></i>
-            </div>
-            <div>
-              <span style="font-size: 0.7rem; font-family: monospace; color: #F4B75E; font-weight: 700;">ACADEMIC QUALIFICATION</span>
-              <h3 style="font-size: 1.3rem; color: #FFF; font-weight: 800;">Master of Computer Applications (MCA)</h3>
-            </div>
-          </div>
-          <p style="font-size: 0.92rem; color: #CBD5E1; line-height: 1.7;">
-            Holding an MCA degree, Aleesha possesses a deep foundation in computer science theory, algorithms, database normalization, and full-stack software development. She has hands-on industry internship experience building production web interfaces, microservices, and database systems.
+          <p style="font-size: 0.95rem; color: #94A3B8; line-height: 1.75;">
+            Having completed 3 software engineering internships across frontend, backend, and full-stack domains, she brings proven code ownership, rapid prototyping, and clean documentation to every team.
           </p>
         </div>
 
-        <!-- Bento Card 2: Key Highlights -->
-        <div class="bento-card col-span-4" style="padding: 2.2rem; background: linear-gradient(135deg, rgba(244, 183, 94, 0.12) 0%, rgba(15, 23, 42, 0.8) 100%);">
-          <span style="font-size: 0.7rem; font-family: monospace; color: #F4B75E; font-weight: 700;">HONORS & AWARDS</span>
-          <h3 style="font-size: 1.2rem; color: #FFF; font-weight: 800; margin: 0.6rem 0 0.8rem 0;">Best Paper Presentation</h3>
-          <p style="font-size: 0.85rem; color: #CBD5E1; line-height: 1.6;">
-            Awarded Best Paper Presentation at ICMCTT-IV 2024 International Conference & Published Author in IRJAEM Journal.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5. NEWEST BENTO GRID (SKILLS & TOOLS) -->
-  <section class="section" id="skills" style="background: #090D16;">
-    <div class="container">
-      <span class="section-tag">CAPABILITIES & TOOLS</span>
-      <h2 class="section-heading">End-to-end software solutions <br> tailored to <span class="font-serif italic text-gradient-pink">your product goals.</span></h2>
-
-      <div class="bento-grid">
-        <!-- Service 1: Backend & APIs -->
-        <div class="bento-card col-span-6" style="padding: 2rem;">
-          <div style="width: 48px; height: 48px; border-radius: 1rem; background: rgba(236, 72, 153, 0.15); border: 1px solid rgba(236, 72, 153, 0.3); display: flex; align-items: center; justify-content: center; color: #EC4899; margin-bottom: 1rem;">
-            <i data-lucide="server"></i>
-          </div>
-          <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin-bottom: 0.5rem;">Backend & REST APIs</h3>
-          <p style="font-size: 0.88rem; color: #94A3B8; line-height: 1.6;">Designing secure REST APIs in Python (Flask) & Node.js, authentication & authorization pipelines, CRUD design, and SQLAlchemy ORM.</p>
-        </div>
-
-        <!-- Service 2: Frontend Engineering -->
-        <div class="bento-card col-span-6" style="padding: 2rem;">
-          <div style="width: 48px; height: 48px; border-radius: 1rem; background: rgba(236, 72, 153, 0.15); border: 1px solid rgba(236, 72, 153, 0.3); display: flex; align-items: center; justify-content: center; color: #EC4899; margin-bottom: 1rem;">
-            <i data-lucide="code-2"></i>
-          </div>
-          <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin-bottom: 0.5rem;">Frontend Engineering</h3>
-          <p style="font-size: 0.88rem; color: #94A3B8; line-height: 1.6;">Building fluid React.js & Next.js 15 user interfaces, custom hooks, Redux / Context API state, Tailwind CSS, and HTML5/CSS3.</p>
-        </div>
-
-        <!-- Tools Bento Block -->
-        <div class="bento-card col-span-12" style="padding: 2.2rem;">
-          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem; margin-bottom: 1.5rem;">
-            <span style="font-size: 0.78rem; font-family: monospace; font-weight: 800; color: #EC4899; text-transform: uppercase;">FULL TECH STACK & TOOLS</span>
-            <i data-lucide="layers" style="color: #8B5CF6; width: 18px;"></i>
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; justify-content: center;">
+          <div style="padding-left: 1.5rem; border-left: 2px solid var(--gold-primary);">
+            <div style="font-size: 0.78rem; font-family: monospace; color: var(--gold-primary); font-weight: 700;">DEGREE</div>
+            <div style="font-size: 1.15rem; font-weight: 800; color: #FFF; margin-top: 0.2rem;">Master of Computer Applications (MCA)</div>
           </div>
 
-          <div style="display: flex; flex-wrap: wrap; gap: 0.7rem;">
-            <span class="tech-chip">🐍 Python 3.12</span>
-            <span class="tech-chip">⚡ Flask</span>
-            <span class="tech-chip">⚛️ React.js</span>
-            <span class="tech-chip">🚀 Next.js 15</span>
-            <span class="tech-chip">🟢 Node.js</span>
-            <span class="tech-chip">🐘 PostgreSQL</span>
-            <span class="tech-chip">🍃 MongoDB</span>
-            <span class="tech-chip">🔥 Firebase</span>
-            <span class="tech-chip">🐙 Git & GitHub</span>
-            <span class="tech-chip">📬 Postman</span>
-            <span class="tech-chip">🎨 Tailwind CSS</span>
-            <span class="tech-chip">🌐 REST APIs</span>
+          <div style="padding-left: 1.5rem; border-left: 2px solid #8B5CF6;">
+            <div style="font-size: 0.78rem; font-family: monospace; color: #8B5CF6; font-weight: 700;">ACHIEVEMENT</div>
+            <div style="font-size: 1.15rem; font-weight: 800; color: #FFF; margin-top: 0.2rem;">Best Paper Presentation (ICMCTT-IV 2024)</div>
+          </div>
+
+          <div style="padding-left: 1.5rem; border-left: 2px solid #EC4899;">
+            <div style="font-size: 0.78rem; font-family: monospace; color: #EC4899; font-weight: 700;">PUBLICATION</div>
+            <div style="font-size: 1.15rem; font-weight: 800; color: #FFF; margin-top: 0.2rem;">Published Author in IRJAEM Journal</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 6. SOFTWARE SERVICES SECTION -->
-  <section class="section" id="services">
+  <!-- 5. WORK EXPERIENCE SECTION (NEW WAY - SLEEK MINIMAL ROW LIST) -->
+  <section class="section" id="experience" style="background: #04060A;">
     <div class="container">
-      <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem auto;">
-        <span class="section-tag">SOFTWARE SERVICES</span>
-        <h2 class="section-heading">End-to-End Engineering <br> <span class="font-serif italic text-gradient-gold">tailored to your product goals.</span></h2>
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 3rem;">
+        <div>
+          <span class="section-tag">CAREER JOURNEY</span>
+          <h2 class="section-heading" style="margin-bottom: 0;">Work <span class="font-serif italic text-gradient-gold">Experience</span></h2>
+        </div>
+        <span style="font-size: 0.82rem; font-family: monospace; color: #94A3B8;">3 Software Engineering Internships</span>
       </div>
 
-      <div class="bento-grid">
-        <div class="bento-card col-span-4" style="padding: 2rem;">
-          <div style="width: 48px; height: 48px; border-radius: 1rem; background: rgba(244, 183, 94, 0.1); border: 1px solid rgba(244, 183, 94, 0.3); display: flex; align-items: center; justify-content: center; color: #F4B75E; margin-bottom: 1rem;">
-            <i data-lucide="server"></i>
+      <!-- New Way Experience List -->
+      <div class="exp-list">
+        <!-- Row 1 -->
+        <div class="exp-row">
+          <div>
+            <div class="exp-company"><i data-lucide="building-2" style="color: #F4B75E; width: 18px;"></i> Dodo Interactive</div>
+            <div class="exp-period">Mar 2026 – Jun 2026 • WFH</div>
           </div>
-          <h3 style="font-size: 1.1rem; color: #FFF; font-weight: 700; margin-bottom: 0.5rem;">Python & Flask Microservices</h3>
-          <p style="font-size: 0.85rem; color: #CBD5E1; line-height: 1.6;">Designing scalable backend REST APIs, authentication pipelines, token verification, and SQLAlchemy ORM data layers.</p>
-        </div>
-
-        <div class="bento-card col-span-4" style="padding: 2rem;">
-          <div style="width: 48px; height: 48px; border-radius: 1rem; background: rgba(244, 183, 94, 0.1); border: 1px solid rgba(244, 183, 94, 0.3); display: flex; align-items: center; justify-content: center; color: #F4B75E; margin-bottom: 1rem;">
-            <i data-lucide="code-2"></i>
-          </div>
-          <h3 style="font-size: 1.1rem; color: #FFF; font-weight: 700; margin-bottom: 0.5rem;">React.js & Next.js 15 Apps</h3>
-          <p style="font-size: 0.85rem; color: #CBD5E1; line-height: 1.6;">Building high-performance web applications, state management architectures, and responsive interfaces.</p>
-        </div>
-
-        <div class="bento-card col-span-4" style="padding: 2rem;">
-          <div style="width: 48px; height: 48px; border-radius: 1rem; background: rgba(244, 183, 94, 0.1); border: 1px solid rgba(244, 183, 94, 0.3); display: flex; align-items: center; justify-content: center; color: #F4B75E; margin-bottom: 1rem;">
-            <i data-lucide="database"></i>
-          </div>
-          <h3 style="font-size: 1.1rem; color: #FFF; font-weight: 700; margin-bottom: 0.5rem;">Database System Design</h3>
-          <p style="font-size: 0.85rem; color: #CBD5E1; line-height: 1.6;">Structuring relational databases (MySQL, PostgreSQL) and NoSQL real-time document stores (MongoDB, Firebase).</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. CAREER JOURNEY / EXPERIENCE SECTION -->
-  <section class="section" id="experience" style="background: #090D16;">
-    <div class="container">
-      <div style="text-align: center; max-width: 700px; margin: 0 auto 3.5rem auto;">
-        <span class="section-tag">CAREER JOURNEY</span>
-        <h2 class="section-heading">Work <span class="font-serif italic text-gradient-gold">Experience</span></h2>
-      </div>
-
-      <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 900px; margin: 0 auto;">
-        <!-- Experience 1 -->
-        <div class="bento-card" style="padding: 2.2rem;">
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
-            <span style="background: rgba(244, 183, 94, 0.15); border: 1px solid rgba(244, 183, 94, 0.3); color: #F4B75E; padding: 0.25rem 0.9rem; border-radius: 9999px; font-size: 0.75rem; font-family: monospace; font-weight: 700;">Mar 2026 – Jun 2026</span>
-            <span style="font-size: 0.8rem; color: #94A3B8; font-family: monospace;">Internship (WFH)</span>
-          </div>
-          <h3 style="font-size: 1.35rem; color: #FFF; font-weight: 800;">Frontend Developer</h3>
-          <div style="color: #F4B75E; font-size: 0.95rem; font-weight: 700; margin-bottom: 1rem;">Dodo Interactive</div>
-          <ul style="color: #CBD5E1; font-size: 0.88rem; line-height: 1.7; padding-left: 1.2rem; margin-bottom: 1.5rem;">
-            <li>Built responsive web interfaces with React.js, Next.js 15, JavaScript, HTML5, and CSS3 under a sprint cycle.</li>
-            <li>Integrated RESTful APIs into frontend components and improved page render performance; managed Git/GitHub repository workflows.</li>
-          </ul>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-            <span class="tech-chip">React.js</span><span class="tech-chip">Next.js 15</span><span class="tech-chip">JavaScript</span><span class="tech-chip">Tailwind CSS</span><span class="tech-chip">Git/GitHub</span>
+          <div>
+            <div class="exp-role">Frontend Developer</div>
+            <ul style="color: #CBD5E1; font-size: 0.9rem; line-height: 1.7; padding-left: 1.2rem; margin-bottom: 1rem;">
+              <li>Built responsive web interfaces with React.js, Next.js 15, JavaScript, HTML5, and CSS3 working under sprint cycles.</li>
+              <li>Integrated RESTful APIs into frontend components and improved page render speed; managed Git/GitHub repository workflows.</li>
+            </ul>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span style="font-size: 0.72rem; font-family: monospace; padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: rgba(255,255,255,0.05); color: #CBD5E1;">React.js</span>
+              <span style="font-size: 0.72rem; font-family: monospace; padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: rgba(255,255,255,0.05); color: #CBD5E1;">Next.js 15</span>
+              <span style="font-size: 0.72rem; font-family: monospace; padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: rgba(255,255,255,0.05); color: #CBD5E1;">JavaScript</span>
+              <span style="font-size: 0.72rem; font-family: monospace; padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: rgba(255,255,255,0.05); color: #CBD5E1;">Tailwind CSS</span>
+            </div>
           </div>
         </div>
 
-        <!-- Experience 2 -->
-        <div class="bento-card" style="padding: 2.2rem;">
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
-            <span style="background: rgba(244, 183, 94, 0.15); border: 1px solid rgba(244, 183, 94, 0.3); color: #F4B75E; padding: 0.25rem 0.9rem; border-radius: 9999px; font-size: 0.75rem; font-family: monospace; font-weight: 700;">Dec 2025 – Mar 2026</span>
-            <span style="font-size: 0.8rem; color: #94A3B8; font-family: monospace;">Internship (Kochi)</span>
+        <!-- Row 2 -->
+        <div class="exp-row">
+          <div>
+            <div class="exp-company"><i data-lucide="building-2" style="color: #F4B75E; width: 18px;"></i> Fawstech Innovations</div>
+            <div class="exp-period">Dec 2025 – Mar 2026 • Kochi</div>
           </div>
-          <h3 style="font-size: 1.35rem; color: #FFF; font-weight: 800;">Backend Developer</h3>
-          <div style="color: #F4B75E; font-size: 0.95rem; font-weight: 700; margin-bottom: 1rem;">Fawstech Innovations</div>
-          <ul style="color: #CBD5E1; font-size: 0.88rem; line-height: 1.7; padding-left: 1.2rem; margin-bottom: 1.5rem;">
-            <li>Built backend modules and ~4 RESTful API endpoints in Python/Flask with Firebase datastore.</li>
-            <li>Optimized database queries and led API debugging to reduce reported issues prior to release.</li>
-          </ul>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-            <span class="tech-chip">Python</span><span class="tech-chip">Flask</span><span class="tech-chip">Firebase Datastore</span><span class="tech-chip">REST APIs</span>
+          <div>
+            <div class="exp-role">Backend Developer</div>
+            <ul style="color: #CBD5E1; font-size: 0.9rem; line-height: 1.7; padding-left: 1.2rem; margin-bottom: 1rem;">
+              <li>Built backend modules and ~4 RESTful API endpoints in Python/Flask with Firebase real-time datastore.</li>
+              <li>Optimized database queries and led testing & debugging efforts to reduce pre-release bugs.</li>
+            </ul>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span style="font-size: 0.72rem; font-family: monospace; padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: rgba(255,255,255,0.05); color: #CBD5E1;">Python</span>
+              <span style="font-size: 0.72rem; font-family: monospace; padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: rgba(255,255,255,0.05); color: #CBD5E1;">Flask</span>
+              <span style="font-size: 0.72rem; font-family: monospace; padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: rgba(255,255,255,0.05); color: #CBD5E1;">Firebase Datastore</span>
+              <span style="font-size: 0.72rem; font-family: monospace; padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: rgba(255,255,255,0.05); color: #CBD5E1;">REST APIs</span>
+            </div>
           </div>
         </div>
 
-        <!-- Experience 3 -->
-        <div class="bento-card" style="padding: 2.2rem;">
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
-            <span style="background: rgba(244, 183, 94, 0.15); border: 1px solid rgba(244, 183, 94, 0.3); color: #F4B75E; padding: 0.25rem 0.9rem; border-radius: 9999px; font-size: 0.75rem; font-family: monospace; font-weight: 700;">Jul 2025 – Sep 2025</span>
-            <span style="font-size: 0.8rem; color: #94A3B8; font-family: monospace;">Internship (WFH)</span>
+        <!-- Row 3 -->
+        <div class="exp-row">
+          <div>
+            <div class="exp-company"><i data-lucide="building-2" style="color: #F4B75E; width: 18px;"></i> ByteMinders Edutech</div>
+            <div class="exp-period">Jul 2025 – Sep 2025 • WFH</div>
           </div>
-          <h3 style="font-size: 1.35rem; color: #FFF; font-weight: 800;">Full Stack Developer</h3>
-          <div style="color: #F4B75E; font-size: 0.95rem; font-weight: 700; margin-bottom: 1rem;">ByteMinders Edutech</div>
-          <ul style="color: #CBD5E1; font-size: 0.88rem; line-height: 1.7; padding-left: 1.2rem; margin-bottom: 1.5rem;">
-            <li>Owned version control workflows across a multi-developer full-stack codebase.</li>
-            <li>Engineered full-stack features, integrated database schemas, and supported feature release deployments.</li>
-          </ul>
-          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-            <span class="tech-chip">Node.js</span><span class="tech-chip">Express.js</span><span class="tech-chip">MongoDB</span><span class="tech-chip">React.js</span><span class="tech-chip">Git/GitHub</span>
+          <div>
+            <div class="exp-role">Full Stack Developer</div>
+            <ul style="color: #CBD5E1; font-size: 0.9rem; line-height: 1.7; padding-left: 1.2rem; margin-bottom: 1rem;">
+              <li>Owned version control and collaboration workflows via Git/GitHub across a multi-developer codebase.</li>
+              <li>Engineered full-stack features, integrated database schemas, and supported feature release deployments.</li>
+            </ul>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span style="font-size: 0.72rem; font-family: monospace; padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: rgba(255,255,255,0.05); color: #CBD5E1;">Node.js</span>
+              <span style="font-size: 0.72rem; font-family: monospace; padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: rgba(255,255,255,0.05); color: #CBD5E1;">Express.js</span>
+              <span style="font-size: 0.72rem; font-family: monospace; padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: rgba(255,255,255,0.05); color: #CBD5E1;">MongoDB</span>
+              <span style="font-size: 0.72rem; font-family: monospace; padding: 0.2rem 0.6rem; border-radius: 0.4rem; background: rgba(255,255,255,0.05); color: #CBD5E1;">React.js</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 8. PROJECTS SECTION -->
-  <section class="section" id="projects">
+  <!-- 6. SKILLS & SERVICES SECTION (CLEAN MINIMAL GRID) -->
+  <section class="section" id="skills">
     <div class="container">
-      <span class="section-tag">FEATURED CASE STUDIES</span>
-      <h2 class="section-heading">Designing impact through <span class="font-serif italic text-gradient-pink">meaningful</span> solutions.</h2>
+      <span class="section-tag">SERVICES & CAPABILITIES</span>
+      <h2 class="section-heading">End-to-end engineering <br> tailored to <span class="font-serif italic text-gradient-pink">your goals.</span></h2>
 
-      <div class="bento-grid">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-subtle);">
+          <div style="color: #F4B75E; margin-bottom: 0.8rem;"><i data-lucide="server"></i></div>
+          <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin-bottom: 0.4rem;">Python & Flask APIs</h3>
+          <p style="font-size: 0.88rem; color: #94A3B8; line-height: 1.6;">Designing scalable backend REST APIs, authentication pipelines, token verification, and SQLAlchemy ORM data layers.</p>
+        </div>
+
+        <div style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-subtle);">
+          <div style="color: #F4B75E; margin-bottom: 0.8rem;"><i data-lucide="code-2"></i></div>
+          <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin-bottom: 0.4rem;">React.js & Next.js 15</h3>
+          <p style="font-size: 0.88rem; color: #94A3B8; line-height: 1.6;">Building high-performance web applications, custom state management architectures, and Tailwind CSS interfaces.</p>
+        </div>
+
+        <div style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-subtle);">
+          <div style="color: #F4B75E; margin-bottom: 0.8rem;"><i data-lucide="database"></i></div>
+          <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin-bottom: 0.4rem;">Database Architecture</h3>
+          <p style="font-size: 0.88rem; color: #94A3B8; line-height: 1.6;">Structuring relational databases (PostgreSQL, MySQL) and NoSQL stores (MongoDB, Firebase real-time datastore).</p>
+        </div>
+
+        <div style="padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-subtle);">
+          <div style="color: #F4B75E; margin-bottom: 0.8rem;"><i data-lucide="cpu"></i></div>
+          <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin-bottom: 0.4rem;">IoT Cloud Sync</h3>
+          <p style="font-size: 0.88rem; color: #94A3B8; line-height: 1.6;">Connecting physical hardware sensors to real-time Firebase monitoring analytics dashboards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FEATURED PROJECTS SECTION -->
+  <section class="section" id="projects" style="background: #04060A;">
+    <div class="container">
+      <span class="section-tag">CASE STUDIES</span>
+      <h2 class="section-heading">Featured <span class="font-serif italic text-gradient-gold">Projects</span></h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
         <!-- Project 1 -->
-        <div class="bento-card col-span-4">
+        <div style="border: 1px solid var(--border-subtle); border-radius: 1.5rem; overflow: hidden; background: rgba(255,255,255,0.02);">
           <img src="/public/attendance.svg" alt="Smart Attendance System" style="width: 100%; height: 210px; object-fit: cover;">
           <div style="padding: 1.5rem;">
-            <span style="font-size: 0.72rem; font-family: monospace; color: var(--pink-accent); font-weight: 700;">01 • Python • Flask • OpenCV</span>
+            <div style="font-size: 0.72rem; font-family: monospace; color: var(--gold-primary); font-weight: 700;">01 • Python • Flask • OpenCV</div>
             <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin: 0.4rem 0;">SMART ATTENDANCE SYSTEM</h3>
-            <p style="font-size: 0.82rem; color: #94A3B8; margin-bottom: 1.2rem;">Built Flask backend, database schema, and image-processing pipeline with ~90% recognition accuracy.</p>
-            <div style="display: flex; gap: 0.5rem;">
-              <button onclick="openModal('Smart Attendance System', 'Built the Flask backend, database schema, and image-processing pipeline; tested on a class of 10–15 students with ~90% recognition accuracy.', 'Python • OpenCV • Flask • AI Pipeline', 'https://smart-attendance-system-3xze.onrender.com')" class="btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">View Details</button>
+            <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 1.2rem;">Facial recognition pipeline built with Flask backend and OpenCV image processing.</p>
+            <div style="display: flex; gap: 0.6rem;">
+              <button onclick="openModal('Smart Attendance System', 'Built the Flask backend, database schema, and image-processing pipeline; tested on a class of 10–15 students with ~90% recognition accuracy.', 'Python • OpenCV • Flask • AI Pipeline', 'https://smart-attendance-system-3xze.onrender.com')" class="btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">Details</button>
               <a href="https://smart-attendance-system-3xze.onrender.com" target="_blank" class="btn-primary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">Live Demo <i data-lucide="external-link"></i></a>
             </div>
           </div>
         </div>
 
         <!-- Project 2 -->
-        <div class="bento-card col-span-4">
+        <div style="border: 1px solid var(--border-subtle); border-radius: 1.5rem; overflow: hidden; background: rgba(255,255,255,0.02);">
           <img src="/public/hospital.svg" alt="Hospital Management System" style="width: 100%; height: 210px; object-fit: cover;">
           <div style="padding: 1.5rem;">
-            <span style="font-size: 0.72rem; font-family: monospace; color: var(--pink-accent); font-weight: 700;">02 • Flask • PostgreSQL</span>
+            <div style="font-size: 0.72rem; font-family: monospace; color: var(--gold-primary); font-weight: 700;">02 • Flask • PostgreSQL</div>
             <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin: 0.4rem 0;">HOSPITAL MANAGEMENT SYSTEM</h3>
-            <p style="font-size: 0.82rem; color: #94A3B8; margin-bottom: 1.2rem;">Built and optimized REST APIs and PostgreSQL database queries across patient records & physician schedules.</p>
-            <div style="display: flex; gap: 0.5rem;">
-              <button onclick="openModal('Hospital Management System', 'Built and optimized REST APIs and database queries for fast, reliable data retrieval across patient records and physician schedules.', 'Flask • PostgreSQL • REST APIs • SQLAlchemy', 'https://hospital-management-izbu.onrender.com')" class="btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">View Details</button>
+            <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 1.2rem;">Optimized REST APIs and PostgreSQL queries for healthcare patient records & schedules.</p>
+            <div style="display: flex; gap: 0.6rem;">
+              <button onclick="openModal('Hospital Management System', 'Built and optimized REST APIs and database queries for fast, reliable data retrieval across patient records and physician schedules.', 'Flask • PostgreSQL • REST APIs • SQLAlchemy', 'https://hospital-management-izbu.onrender.com')" class="btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">Details</button>
               <a href="https://hospital-management-izbu.onrender.com" target="_blank" class="btn-primary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">Live Demo <i data-lucide="external-link"></i></a>
             </div>
           </div>
         </div>
 
         <!-- Project 3 -->
-        <div class="bento-card col-span-4">
+        <div style="border: 1px solid var(--border-subtle); border-radius: 1.5rem; overflow: hidden; background: rgba(255,255,255,0.02);">
           <img src="/public/electricity.svg" alt="Electricity Billing System" style="width: 100%; height: 210px; object-fit: cover;">
           <div style="padding: 1.5rem;">
-            <span style="font-size: 0.72rem; font-family: monospace; color: var(--pink-accent); font-weight: 700;">03 • IoT • Firebase</span>
+            <div style="font-size: 0.72rem; font-family: monospace; color: var(--gold-primary); font-weight: 700;">03 • IoT • Firebase</div>
             <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin: 0.4rem 0;">ELECTRICITY BILLING & ANALYSIS</h3>
-            <p style="font-size: 0.82rem; color: #94A3B8; margin-bottom: 1.2rem;">Built and tested with physical IoT device to capture live energy readings synced to Firebase analytics.</p>
-            <div style="display: flex; gap: 0.5rem;">
-              <button onclick="openModal('Electricity Billing & Analysis', 'Built and tested with a physical IoT device to capture live energy readings, then synced to Firebase for real-time monitoring.', 'Firebase • IoT Hardware • Real-Time DB • Python', 'https://electricity-billing-system-psi.vercel.app')" class="btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">View Details</button>
+            <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 1.2rem;">Physical IoT hardware capture synced in real-time to Firebase database analytics.</p>
+            <div style="display: flex; gap: 0.6rem;">
+              <button onclick="openModal('Electricity Billing & Analysis', 'Built and tested with a physical IoT device to capture live energy readings, then synced to Firebase for real-time monitoring.', 'Firebase • IoT Hardware • Real-Time DB • Python', 'https://electricity-billing-system-psi.vercel.app')" class="btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">Details</button>
               <a href="https://electricity-billing-system-psi.vercel.app" target="_blank" class="btn-primary" style="padding: 0.45rem 0.9rem; font-size: 0.72rem;">Live Demo <i data-lucide="external-link"></i></a>
             </div>
           </div>
@@ -384,122 +333,106 @@
     </div>
   </section>
 
-  <!-- 9. CERTIFICATIONS SECTION -->
-  <section class="section" id="certifications" style="background: #090D16;">
+  <!-- 8. CERTIFICATIONS & REVIEWS SECTION -->
+  <section class="section" id="certifications">
     <div class="container">
-      <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem auto;">
-        <span class="section-tag">VERIFIED CREDENTIALS</span>
-        <h2 class="section-heading">Accreditations & <span class="font-serif italic text-gradient-gold">Certifications</span></h2>
-      </div>
+      <div style="display: grid; grid-template-columns: 1fr; gap: 3rem;" class="cert-grid">
+        <div>
+          <span class="section-tag">VERIFIED CREDENTIALS</span>
+          <h2 class="section-heading" style="margin-bottom: 1.5rem;">Accreditations & <span class="font-serif italic text-gradient-gold">Certifications</span></h2>
 
-      <div class="bento-grid">
-        <div class="bento-card col-span-4" style="padding: 2rem;">
-          <div style="width: 48px; height: 48px; border-radius: 1rem; background: rgba(244, 183, 94, 0.1); border: 1px solid rgba(244, 183, 94, 0.3); display: flex; align-items: center; justify-content: center; color: #F4B75E; margin-bottom: 1rem;">
-            <i data-lucide="shield-check"></i>
-          </div>
-          <span style="font-size: 0.7rem; font-family: monospace; color: #F4B75E; font-weight: 700;">Certified 2024</span>
-          <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin: 0.3rem 0;">Python Programming Certification</h3>
-          <p style="font-size: 0.8rem; font-family: monospace; color: #94A3B8; margin-bottom: 0.8rem;">NPTEL — IIT Bombay & IIT Madras</p>
-          <p style="font-size: 0.85rem; color: #CBD5E1; line-height: 1.6;">Comprehensive coursework covering data structures, algorithmic design, OOP principles, and Python software engineering.</p>
-        </div>
+          <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+            <div style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+              <div style="font-size: 0.75rem; font-family: monospace; color: var(--gold-primary); font-weight: 700;">NPTEL — IIT BOMBAY & IIT MADRAS (2024)</div>
+              <div style="font-size: 1.15rem; font-weight: 800; color: #FFF; margin: 0.2rem 0;">Python Programming Certification</div>
+              <p style="font-size: 0.85rem; color: #94A3B8;">Data structures, algorithmic design, OOP principles, and Python software engineering.</p>
+            </div>
 
-        <div class="bento-card col-span-4" style="padding: 2rem;">
-          <div style="width: 48px; height: 48px; border-radius: 1rem; background: rgba(244, 183, 94, 0.1); border: 1px solid rgba(244, 183, 94, 0.3); display: flex; align-items: center; justify-content: center; color: #F4B75E; margin-bottom: 1rem;">
-            <i data-lucide="award"></i>
-          </div>
-          <span style="font-size: 0.7rem; font-family: monospace; color: #F4B75E; font-weight: 700;">Certified 2024</span>
-          <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin: 0.3rem 0;">Full Stack Web Development</h3>
-          <p style="font-size: 0.8rem; font-family: monospace; color: #94A3B8; margin-bottom: 0.8rem;">Capital Infotech</p>
-          <p style="font-size: 0.85rem; color: #CBD5E1; line-height: 1.6;">Hands-on mastery of HTML5, CSS3, JavaScript ES6+, React.js, Node.js, Express microservices, and database integration.</p>
-        </div>
-
-        <div class="bento-card col-span-4" style="padding: 2rem;">
-          <div style="width: 48px; height: 48px; border-radius: 1rem; background: rgba(244, 183, 94, 0.1); border: 1px solid rgba(244, 183, 94, 0.3); display: flex; align-items: center; justify-content: center; color: #F4B75E; margin-bottom: 1rem;">
-            <i data-lucide="check-circle"></i>
-          </div>
-          <span style="font-size: 0.7rem; font-family: monospace; color: #F4B75E; font-weight: 700;">Certified 2023</span>
-          <h3 style="font-size: 1.15rem; color: #FFF; font-weight: 800; margin: 0.3rem 0;">Software & Database Foundations</h3>
-          <p style="font-size: 0.8rem; font-family: monospace; color: #94A3B8; margin-bottom: 0.8rem;">Great Learning Academy</p>
-          <p style="font-size: 0.85rem; color: #CBD5E1; line-height: 1.6;">Foundational mastery of Relational DBMS, SQL schema design, normalized queries, and SDLC methodologies.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 10. REVIEWS & AWARDS SECTION -->
-  <section class="section" id="reviews">
-    <div class="container">
-      <div style="text-align: center; max-width: 700px; margin: 0 auto 3rem auto;">
-        <h2 class="section-heading">Loved by teams & mentors <br> <span class="font-serif italic text-gradient-gold">just like you</span></h2>
-      </div>
-
-      <div class="bento-grid">
-        <div class="bento-card col-span-4" style="padding: 2rem; text-align: center;">
-          <div style="color: #F4B75E; margin-bottom: 1rem;">★★★★★</div>
-          <p style="font-size: 0.9rem; color: #CBD5E1; font-style: italic; line-height: 1.65; margin-bottom: 1.5rem;">"Awarded Best Paper Presentation in the PG Category at the 4th International Conference on Modern Computing Trends & Technology (ICMCTT-IV 2024)."</p>
-          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
-            <h4 style="font-size: 0.85rem; font-family: monospace; color: #FFF; font-weight: 700;">ICMCTT-IV Conference Board</h4>
-            <p style="font-size: 0.75rem; font-family: monospace; color: #F4B75E;">International Academic Conference</p>
+            <div style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+              <div style="font-size: 0.75rem; font-family: monospace; color: var(--gold-primary); font-weight: 700;">CAPITAL INFOTECH (2024)</div>
+              <div style="font-size: 1.15rem; font-weight: 800; color: #FFF; margin: 0.2rem 0;">Full Stack Web Development Certification</div>
+              <p style="font-size: 0.85rem; color: #94A3B8;">HTML5, CSS3, JavaScript ES6+, React.js, Node.js, Express microservices, and databases.</p>
+            </div>
           </div>
         </div>
 
-        <div class="bento-card col-span-4" style="padding: 2rem; text-align: center;">
-          <div style="color: #F4B75E; margin-bottom: 1rem;">★★★★★</div>
-          <p style="font-size: 0.9rem; color: #CBD5E1; font-style: italic; line-height: 1.65; margin-bottom: 1.5rem;">"Research paper titled 'The Mindful Matrix: Exploring Social Media's Influence on Mental Wellbeing' published in IRJAEM Journal in Dec 2024."</p>
-          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
-            <h4 style="font-size: 0.85rem; font-family: monospace; color: #FFF; font-weight: 700;">IRJAEM Editorial Board</h4>
-            <p style="font-size: 0.75rem; font-family: monospace; color: #F4B75E;">Peer-Reviewed Journal Publication</p>
-          </div>
-        </div>
+        <div>
+          <span class="section-tag">PEER RECOGNITION</span>
+          <h2 class="section-heading" style="margin-bottom: 1.5rem;">Awards & <span class="font-serif italic text-gradient-pink">Publications</span></h2>
 
-        <div class="bento-card col-span-4" style="padding: 2rem; text-align: center;">
-          <div style="color: #F4B75E; margin-bottom: 1rem;">★★★★★</div>
-          <p style="font-size: 0.9rem; color: #CBD5E1; font-style: italic; line-height: 1.65; margin-bottom: 1.5rem;">"Built backend modules and Flask REST APIs with speed and accuracy, demonstrating strong code ownership during sprint cycles."</p>
-          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
-            <h4 style="font-size: 0.85rem; font-family: monospace; color: #FFF; font-weight: 700;">Engineering Team Leads</h4>
-            <p style="font-size: 0.75rem; font-family: monospace; color: #F4B75E;">Dodo Interactive & Fawstech</p>
+          <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+            <div style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+              <div style="font-size: 0.75rem; font-family: monospace; color: var(--pink-accent); font-weight: 700;">ICMCTT-IV 2024 CONFERENCE</div>
+              <div style="font-size: 1.1rem; font-weight: 800; color: #FFF; margin: 0.2rem 0;">Best Paper Presentation (PG Category)</div>
+              <p style="font-size: 0.85rem; color: #94A3B8;">Awarded for research excellence in modern computing trends and technologies.</p>
+            </div>
+
+            <div style="padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+              <div style="font-size: 0.75rem; font-family: monospace; color: var(--pink-accent); font-weight: 700;">IRJAEM PEER-REVIEWED JOURNAL</div>
+              <div style="font-size: 1.1rem; font-weight: 800; color: #FFF; margin: 0.2rem 0;">Published Journal Research Paper (Dec 2024)</div>
+              <p style="font-size: 0.85rem; color: #94A3B8;">Author of 'The Mindful Matrix: Exploring Social Media's Influence on Mental Wellbeing'.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 11. CONTACT BANNER SECTION -->
-  <section class="section" id="contact">
+  <!-- 9. CONTACT US SECTION (NEW FEATURE DESIGN - HIGH TECH CONTACT HUB) -->
+  <section class="section" id="contact" style="background: #04060A;">
     <div class="container">
-      <div class="bento-card" style="padding: 2.8rem; border-color: rgba(244, 183, 94, 0.35); background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.7) 100%);">
-        <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;" class="contact-grid">
-          <div>
-            <h2 class="section-heading" style="margin-bottom: 1rem;">Ready to engineer, build, <br> and scale your software? <br> <span class="font-serif italic text-gradient-gold">Connect today.</span></h2>
-            <p style="font-size: 0.92rem; color: #CBD5E1; line-height: 1.65; margin-bottom: 1.8rem;">Available for full-time Software Developer roles, backend engineering contracts, and web application projects.</p>
+      <div class="contact-hub">
+        <div>
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2 class="section-heading" style="margin-bottom: 1.2rem;">Let's build something <br> <span class="font-serif italic text-gradient-gold">extraordinary</span> together.</h2>
+          <p style="font-size: 0.95rem; color: #CBD5E1; line-height: 1.7; margin-bottom: 2rem;">
+            Open for full-time Software Developer roles, Python/Flask backend opportunities, and full-stack web projects.
+          </p>
+
+          <!-- Quick Action Contact Chips -->
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <button onclick="copyEmail()" class="contact-chip-btn" id="emailCopyBtn">
+              <i data-lucide="mail" style="color: #F4B75E; width: 16px;"></i>
+              <span id="emailText">aleeshaanas2@gmail.com</span>
+              <i data-lucide="copy" style="width: 14px; margin-left: auto; color: #94A3B8;"></i>
+            </button>
+
+            <a href="https://wa.me/919846691678?text=Hello%20Aleesha,%20I%20visited%20your%20portfolio!" target="_blank" class="contact-chip-btn">
+              <i data-lucide="message-square" style="color: #25D366; width: 16px;"></i>
+              <span>WhatsApp Direct: +91 9846691678</span>
+              <i data-lucide="external-link" style="width: 14px; margin-left: auto; color: #94A3B8;"></i>
+            </a>
+
+            <div class="contact-chip-btn" style="cursor: default;">
+              <i data-lucide="map-pin" style="color: #F4B75E; width: 16px;"></i>
+              <span>Kottayam, Kerala, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Streamlined Form -->
+        <div>
+          <form id="contactForm" style="display: flex; flex-direction: column; gap: 1.2rem;">
+            <input type="text" id="contactName" required placeholder="Your Full Name" class="form-input">
+            <input type="email" id="contactEmail" required placeholder="Your Email Address" class="form-input">
+            <textarea id="contactMessage" required rows="4" placeholder="Tell me about your software project or role..." class="form-input" style="resize: none;"></textarea>
             
-            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.2rem; font-size: 0.88rem; font-family: monospace; color: #CBD5E1;">
-              <p style="margin-bottom: 0.6rem;"><i data-lucide="mail" style="color: #F4B75E; width: 16px;"></i> aleeshaanas2@gmail.com</p>
-              <p><i data-lucide="map-pin" style="color: #F4B75E; width: 16px;"></i> Kottayam, Kerala, India (+91 9846691678)</p>
-            </div>
-          </div>
-
-          <div>
-            <form id="contactForm" style="display: flex; flex-direction: column; gap: 1rem;">
-              <input type="text" id="contactName" required placeholder="Your Name" style="padding: 0.9rem 1.2rem; border-radius: 0.9rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); color: #FFF; outline: none; font-size: 0.85rem;">
-              <input type="email" id="contactEmail" required placeholder="Your Email" style="padding: 0.9rem 1.2rem; border-radius: 0.9rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); color: #FFF; outline: none; font-size: 0.85rem;">
-              <textarea id="contactMessage" required rows="3" placeholder="Tell me about your software project or role..." style="padding: 0.9rem 1.2rem; border-radius: 0.9rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); color: #FFF; outline: none; resize: none; font-size: 0.85rem;"></textarea>
-              <button type="submit" class="btn-primary" style="padding: 0.95rem; justify-content: center; width: 100%;">
-                <span>Get In Touch Today</span>
-                <i data-lucide="arrow-right"></i>
-              </button>
-            </form>
-            <div id="contactSuccess" style="display: none; color: #4ADE80; font-family: monospace; text-align: center; margin-top: 1rem; font-weight: 700;">
-              ✓ Thank you! Your message has been sent successfully.
-            </div>
+            <button type="submit" class="btn-primary" style="padding: 1rem; justify-content: center; width: 100%;">
+              <span>Send Direct Message</span>
+              <i data-lucide="send" style="width: 15px;"></i>
+            </button>
+          </form>
+          
+          <div id="contactSuccess" style="display: none; color: #4ADE80; font-family: monospace; text-align: center; margin-top: 1.5rem; font-weight: 700; font-size: 0.9rem;">
+            ✓ Message received! Thank you, I will get back to you shortly.
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 12. FOOTER -->
-  <footer style="padding: 2.5rem 0; border-top: 1px solid rgba(255, 255, 255, 0.1); background: #040509;">
+  <!-- 10. FOOTER -->
+  <footer style="padding: 2.5rem 0; border-top: 1px solid var(--border-subtle); background: #030407;">
     <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.82rem; color: #94A3B8;">
       <div>© {{ year }} Aleesha Anas. All rights reserved. Built with Python & Flask.</div>
       <div style="display: flex; gap: 1.2rem;">
@@ -510,16 +443,16 @@
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/919846691678?text=Hello%20Aleesha,%20I%20visited%20your%20portfolio!" target="_blank" style="position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 8000; width: 58px; height: 58px; border-radius: 50%; background: #25D366; color: #FFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-decoration: none;" title="Chat on WhatsApp">
+  <a href="https://wa.me/919846691678?text=Hello%20Aleesha,%20I%20visited%20your%20portfolio!" target="_blank" style="position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 8000; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #FFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-decoration: none;" title="Chat on WhatsApp">
     <i data-lucide="message-circle" style="width: 28px; height: 28px;"></i>
   </a>
 
   <!-- Floating Back To Top Button -->
-  <button id="scrollTopBtn" style="position: fixed; bottom: 5.5rem; right: 1.5rem; z-index: 7999; width: 46px; height: 46px; border-radius: 50%; background: rgba(15,23,42,0.9); border: 1px solid rgba(244,183,94,0.3); color: #FFF; display: none; align-items: center; justify-content: center; cursor: pointer;" title="Back to Top">
-    <i data-lucide="arrow-up" style="width: 20px; height: 20px;"></i>
+  <button id="scrollTopBtn" style="position: fixed; bottom: 5.5rem; right: 1.5rem; z-index: 7999; width: 44px; height: 44px; border-radius: 50%; background: rgba(15,23,42,0.9); border: 1px solid rgba(244,183,94,0.3); color: #FFF; display: none; align-items: center; justify-content: center; cursor: pointer;" title="Back to Top">
+    <i data-lucide="arrow-up" style="width: 18px; height: 18px;"></i>
   </button>
 
-  <!-- 13. AI COPILOT WIDGET -->
+  <!-- 11. AI COPILOT WIDGET -->
   <div class="copilot-widget">
     <button class="copilot-btn" id="copilotBtn" title="Ask Aleesha's AI Copilot">
       <i data-lucide="bot" style="width: 26px; height: 26px;"></i>
@@ -551,7 +484,7 @@
     </div>
   </div>
 
-  <!-- 14. CASE STUDY DETAIL MODAL -->
+  <!-- 12. CASE STUDY DETAIL MODAL -->
   <div class="modal-overlay" id="projectModal">
     <div class="modal-content">
       <button onclick="closeModal()" style="position: absolute; top: 1.2rem; right: 1.2rem; background: none; border: none; color: #94A3B8; cursor: pointer;">

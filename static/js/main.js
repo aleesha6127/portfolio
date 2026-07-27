@@ -25,27 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 2. Mobile Menu Toggle
-  const mobileToggle = document.getElementById("mobileToggle");
-  const navLinks = document.querySelector(".nav-links");
-  if (mobileToggle && navLinks) {
-    mobileToggle.addEventListener("click", () => {
-      const isVisible = navLinks.style.display === "flex";
-      navLinks.style.display = isVisible ? "none" : "flex";
-      if (!isVisible) {
-        navLinks.style.flexDirection = "column";
-        navLinks.style.position = "absolute";
-        navLinks.style.top = "100%";
-        navLinks.style.left = "1.5rem";
-        navLinks.style.right = "1.5rem";
-        navLinks.style.padding = "1.5rem";
-        navLinks.style.borderRadius = "1.5rem";
-        navLinks.style.background = "#0E0921";
-      }
-    });
-  }
-
-  // 3. Contact Form Submission
+  // 2. Contact Form Submission
   const contactForm = document.getElementById("contactForm");
   const contactSuccess = document.getElementById("contactSuccess");
   if (contactForm && contactSuccess) {
@@ -61,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 4. AI Copilot Toggle & Chat API Call
+  // 3. AI Copilot Toggle & Chat API Call
   const copilotBtn = document.getElementById("copilotBtn");
   const copilotModal = document.getElementById("copilotModal");
   const copilotClose = document.getElementById("copilotClose");
@@ -117,6 +97,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// Copy Email Helper Function
+function copyEmail() {
+  const emailText = "aleeshaanas2@gmail.com";
+  navigator.clipboard.writeText(emailText).then(() => {
+    const btn = document.getElementById("emailCopyBtn");
+    const textSpan = document.getElementById("emailText");
+    if (textSpan && btn) {
+      const originalText = textSpan.textContent;
+      textSpan.textContent = "Copied to Clipboard! ✓";
+      btn.style.borderColor = "#4ADE80";
+      setTimeout(() => {
+        textSpan.textContent = originalText;
+        btn.style.borderColor = "rgba(255, 255, 255, 0.12)";
+      }, 2500);
+    }
+  }).catch((err) => {
+    console.error("Failed to copy email:", err);
+  });
+}
 
 // Modal functions for case studies
 function openModal(title, desc, tags, link) {
